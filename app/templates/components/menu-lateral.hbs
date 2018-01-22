@@ -1,0 +1,26 @@
+<div class="flex-30">
+    {{#paper-sidenav-container class="inner-sidenav" style="height: calc(100vh - 64px);"}}
+      {{#paper-sidenav
+          class="md-whiteframe-z2"
+          name="left2"
+          lockedOpen=false
+          closeOnClick=true
+          open=myService.abrirPainelLateral }}
+          {{#paper-content }}
+            {{#paper-list}}
+
+              {{#paper-item  as |controls|}}TESTE 1
+              
+              {{/paper-item}}
+              
+              {{#paper-item onClick="" as |controls|}}TESTE 1
+
+              {{/paper-item}}
+
+            {{/paper-list}}
+
+          {{/paper-content}}
+        {{/paper-sidenav}}
+    {{/paper-sidenav-container}}
+</div>
+{{yield}}
