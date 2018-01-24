@@ -5,7 +5,7 @@ export default Component.extend({
     myService: Ember.inject.service(),
     actions: {
         abrirMenu: function () {
-            this.get('myService').get('abrirPainelLateral') ? this.get('myService').set('abrirPainelLateral', false) : this.get('myService').set('abrirPainelLateral', true);
+            this.get('myService').get('abrirPainelLateral') ? this.get('myService').set('abrirPainelLateral', false) : this.get('myService').set('abrirPainelLateral', true); 
         }
     }
 });

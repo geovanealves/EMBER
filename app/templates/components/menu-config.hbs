@@ -1,0 +1,34 @@
+{{#paper-menu as |menu|}}
+    {{#menu.trigger}}
+        {{#paper-button iconButton=true }}
+            <div class="layout-row flex">
+                <div style="margin-right: 6px !important">
+                    {{paper-icon "settings"}}
+                </div>
+                <div style="font-size: 12px !important">
+                    teste
+                </div>
+            </div>
+        {{/paper-button}}
+    {{/menu.trigger}}
+
+    {{#menu.content width=2 as |content|}}
+
+      {{#content.menu-item onClick=null}}
+        {{paper-icon "settings"}}
+        <span>teste</span>
+      {{/content.menu-item}}
+
+      {{#content.menu-item onClick=null}}
+        {{paper-icon "settings"}}
+        <span>teste</span>
+      {{/content.menu-item}}
+
+      {{#content.menu-item onClick=null}}
+        {{paper-icon "settings"}}
+        <span>teste</span>
+      {{/content.menu-item}}
+
+    {{/menu.content}}
+{{/paper-menu}}
+{{yield}}

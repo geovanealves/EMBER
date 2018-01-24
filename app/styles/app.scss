@@ -2,10 +2,40 @@
 
 .toolbar-superior {
     min-height: 46px !important;
-    height: 46px !important;
     max-height: 46px !important;
+    padding-left: 46px;
+    padding-right: 15px;
+    background-color: #3F51B5 !important;
+    color:#CACCD7 !important;
 }
 
+.menu-lateral {
+    min-height: 46px !important;
+    max-height: 46px !important;
+    background-color: #3F51B5 !important;
+    color:#CACCD7 !important;
+}
 .tollbar-tools-superior{
-    font-size: 10px !important;
+    font-size: 16px !important;
+    padding: 0px !important;
+    font-weight: bold !important;
+}
+
+.toolbar-superior-title{
+    padding-left: 15px;
+}
+
+.md-toolbar-tools > .md-button:first-child{
+    margin: 0px !important;
+}
+
+.md-button.md-icon-button{
+    width: auto !important;
+}
+.tollbar-icone{
+    padding: 0px !important;
+}
+
+.teste{
+    margin-right: 0px !important;
 }

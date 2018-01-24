@@ -1,11 +1,16 @@
 <div class="flex-30">
-    {{#paper-sidenav-container class="inner-sidenav" style="height: calc(100vh - 64px);"}}
+    {{#paper-sidenav-container class="inner-sidenav" style="height: calc(100vh - 46px);"}}
       {{#paper-sidenav
           class="md-whiteframe-z2"
           name="left2"
-          lockedOpen=false
-          closeOnClick=true
-          open=myService.abrirPainelLateral }}
+          position="left"
+          lockedOpen=myService.teste
+          open=myService.abrirPainelLateral
+          onToggle=(action (mut myService.abrirPainelLateral)) }}
+
+        {{#paper-toolbar class="menu-lateral" as |toolbar|}}
+          {{#paper-toolbar-tools}}Menu{{/paper-toolbar-tools}}
+        {{/paper-toolbar }}
           {{#paper-content }}
             {{#paper-list}}
 
